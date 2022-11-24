@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="StyleSheet" href="./sTree.css" type="text/css" />
+
+  <body>
+    <div class="sTree" id="sTree">
+      <!-- <div id="s1" class="clip" style="display: block">
+      <div id="d1" class="nodeSel" onclick="s(1); ">
+        <img id="j1" src="./img/folderopen.gif" alt="" />
+        <input type="checkbox" name="checkBox" class="checkBox" value="1" id="i1" onchange="getCheckBox(this);" />
+        <p class="node">C:\</p>
+      </div>jquery.min.js
+      <div id="s4" class="clip" style="display: block">
+        <div id="d4" class="sTreeNode" onclick="s(4); ">
+          <img id="j4" src="./img/folder.gif" alt="" />
+          <input type="checkbox" name="checkBox" class="checkBox" value="4" id="i4" onchange="getCheckBox(this);" />
+          <p class="node">System Volume Information</p>
+        </div>
+      </div>
+      <div id="s5" class="clip" style="display: block">
+        <div id="d5" class="sTreeNode" onclick="s(5); ">
+          <img id="j5" src="./img/folder.gif" alt="" />
+          <input type="checkbox" name="checkBox" class="checkBox" value="5" id="i5" onchange="getCheckBox(this);" />
+          <p class="node">Users</p>
+        </div>
+      </div>
+      <div id="s6" class="clip" style="display: block">
+        <div id="d6" class="sTreeNode" onclick="s(6); ">
+          <img id="j6" src="./img/folder.gif" alt="" />
+          <input type="checkbox" name="checkBox" class="checkBox" value="6" id="i6" onchange="getCheckBox(this);" />
+          <p class="node">Windows</p>
+        </div>
+      </div>
+      <div id="s7" class="clip" style="display: block">
+        <div id="d7" class="sTreeNode" onclick="s(7); ">
+          <img id="j7" src="./img/page.gif" alt="" />
+          <input type="checkbox" name="checkBox" class="checkBox" value="7" id="i7" onchange="getCheckBox(this);" />
+          <p class="node">bootMgr</p>
+        </div>
+      </div>
+      <div id="s8" class="clip" style="display: block">
+        <div id="d8" class="sTreeNode" onclick="s(8); ">
+          <img id="j8" src="./img/page.gif" alt="" />
+          <input type="checkbox" name="checkBox" class="checkBox" value="8" id="i8" onchange="getCheckBox(this);" />
+          <p class="node">undefined</p>
+        </div>
+      </div>
+    </div> -->
+    </div>
+  </body>
+  <script type="text/javascript" src="../jquery.min.js"></script>
+  <script type="text/javascript" src="./sTree.js"></script>
+
+  <script>
+    // sTree样式可以自己根据情况设设置
+    var sTree = new sTree("sTree", false, "./img");
+
+    //  真实场景的ajax
+    // function initTree(data) {
+    //   var path = "/";
+    //   if (data) {
+    //     path = data.path;
+    //   }
+    //   _g.ajax("/Base/directorys", {
+    //     cmdlist: [
+    //       {
+    //         cmd: 131080,
+    //         ncmd: "文件目录",
+    //         data: {
+    //           path: path
+    //         }
+    //       }
+    //     ]
+    //   }).then(function (res) {
+    //     console.log("res-1", res.results);
+    //     if (data) {
+    //       sTree.getDirSelected(data, res.results);
+    //     } else {
+    //       sTree.append(res.results, "sTree");
+    //     }
+    //   });
+    // }
+
+    // 假数据-真实情况使用上面的方法
+    function initTree(data) {
+      var path = "/";
+      if (data) {
+        path = data.path;
+      }
+      var res = getData(path);
+      console.log("res", res);
+      if (data) {
+        sTree.getDirSelected(data, res);
+      } else {
+        sTree.append(res, "sTree");
+      }
+    }
+
+    // 多选的方法
+    function getCheckBox(event) {
+      var chk_value = []; //定义一个数组
+      $('input[name="checkBox"]:checked').each(function () {
+        //遍历每一个名字为nodes的复选框，其中选中的执行函数
+        chk_value.push($(this).val()); //将选中的值添加到数组chk_value中
+      });
+      console.log("chk_value", chk_value);
+    }
+
+    // 单选的方法
+    function s(id) {
+      console.log("当前选择的数据：", id, sTree.aNodesObj[id]);
+      if (sTree.selectedNode != id) {
+        // 如果是文件夹就先查看是否加载过,没有加载的话就加载,有的话就切换开关
+        if (sTree.aNodesObj[id].type === "dir") {
+          initTree(sTree.aNodesObj[id]);
+        } else {
+          // 如果是文件就直接选中
+          sTree.getSelected(sTree.aNodesObj[id]);
+        }
+      } else {
+        if (sTree.aNodesObj[id].type === "dir") {
+          initTree(sTree.aNodesObj[id]);
+        }
+      }
+    }
+    // 获取假数据-只做了2层的假数据-真实环境需要删除
+    function getData(path) {
+      if (path === "/") {
+        return {
+          file_lists: [
+            {
+              name: "C:\\",
+              type: "dir",
+            },
+            {
+              name: "D:\\",
+              type: "dir",
+            },
+          ],
+          path: "/",
+        };
+      } else if (path === "C:\\") {
+        return {
+          file_lists: [
+            {
+              name: "Documents and Settings",
+              type: "dir",
+            },
+            {
+              name: "WINNT",
+              type: "dir",
+            },
+            {
+              name: "æ–°å»ºæ–‡ä»¶å¤¹",
+              type: "dir",
+            },
+            {
+              name: "arcldr.exe",
+              type: "file",
+            },
+            {
+              name: "arcsetup.exe",
+              type: "file",
+            },
+          ],
+          path: "C:\\",
+        };
+      } else if (path === "D:\\") {
+        return {
+          file_lists: [
+            {
+              name: "Documents and Settings",
+              type: "dir",
+            },
+            {
+              name: "WINNT",
+              type: "dir",
+            },
+            {
+              name: "æ–°å»ºæ–‡ä»¶å¤¹",
+              type: "dir",
+            },
+            {
+              name: "arcldr.exe",
+              type: "file",
+            },
+            {
+              name: "arcsetup.exe",
+              type: "file",
+            },
+          ],
+          path: "D:\\",
+        };
+      }
+    }
+    // 初始调用
+    initTree();
+  </script>
+</html>

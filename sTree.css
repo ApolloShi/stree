@@ -1,0 +1,106 @@
+#sTree {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #606266;
+  white-space: nowrap;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  float: left;
+  height: 300px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#sTree img {
+  border: 0px;
+  /* vertical-align: top; */
+  /* display: inline-block; */
+  display: block;
+  float: left;
+}
+
+#sTree p {
+  color: #606266;
+  text-decoration: none;
+  height: 18px;
+  line-height: 18px;
+  margin: 0;
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  display: block;
+  float: left;
+}
+#sTree .checkbox {
+  display: block;
+  float: left;
+}
+#sTree input {
+  display: block;
+  float: left;
+  height: auto;
+  width: auto;
+}
+
+#sTree .sTreeNode,
+#sTree .nodeSel {
+  padding: 0 5px;
+  height: 18px;
+  line-height: 18px;
+}
+
+#sTree .sTreeNode:hover {
+  background: #cbcdcf;
+}
+
+#sTree .sTreeNode p,
+#sTree .nodeSel p {
+  padding: 0 5px;
+}
+
+#sTree div.nodeSel {
+  background: #cbcdcf;
+}
+
+#sTree .clip {
+  box-sizing: border-box;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+#sTree .clip .clip .sTreeNode,
+#sTree .clip .clip .nodeSel {
+  padding-left: 20px;
+}
+
+#sTree .clip .clip .clip .sTreeNode,
+#sTree .clip .clip .clip .nodeSel {
+  padding-left: 40px;
+}
+
+#sTree .clip .clip .clip .clip .sTreeNode,
+#sTree .clip .clip .clip .clip .nodeSel {
+  padding-left: 60px;
+}
+
+#sTree .clip .clip .clip .clip .clip .sTreeNode,
+#sTree .clip .clip .clip .clip .clip .nodeSel {
+  padding-left: 80px;
+}
+
+#sTree .clip .clip .clip .clip .clip .clip .sTreeNode,
+#sTree .clip .clip .clip .clip .clip .clip .nodeSel {
+  padding-left: 100px;
+}
+
+#sTree .clip .clip .clip .clip .clip .clip .clip .sTreeNode,
+#sTree .clip .clip .clip .clip .clip .clip .clip .nodeSel {
+  padding-left: 120px;
+}
+
+#sTree .clip .clip .clip .clip .clip .clip .clip .clip .sTreeNode,
+#sTree .clip .clip .clip .clip .clip .clip .clip .clip .nodeSel {
+  padding-left: 140px;
+}

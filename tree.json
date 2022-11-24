@@ -1,0 +1,411 @@
+{
+    "file_lists": [
+        {
+            "name": "C:\\",
+            "type": "dir"
+        },
+        {
+            "name": "D:\\",
+            "type": "dir"
+        },
+        {
+            "name": "E:\\",
+            "type": "dir"
+        }
+    ],
+    "path": "/"
+}
+
+{
+    "file_lists": [
+        {
+            "name": "AX NF ZZ",
+            "type": "dir"
+        },
+        {
+            "name": "Boot",
+            "type": "dir"
+        },
+        {
+            "name": "Documents and Settings",
+            "type": "dir"
+        },
+        {
+            "name": "inetpub",
+            "type": "dir"
+        },
+        {
+            "name": "PerfLogs",
+            "type": "dir"
+        },
+        {
+            "name": "Program Files",
+            "type": "dir"
+        },
+        {
+            "name": "Program Files (x86)",
+            "type": "dir"
+        },
+        {
+            "name": "ProgramData",
+            "type": "dir"
+        },
+        {
+            "name": "Project",
+            "type": "dir"
+        },
+        {
+            "name": "Recovery",
+            "type": "dir"
+        },
+        {
+            "name": "System Volume Information",
+            "type": "dir"
+        },
+        {
+            "name": "Users",
+            "type": "dir"
+        },
+        {
+            "name": "Windows",
+            "type": "dir"
+        },
+        {
+            "name": "bootmgr",
+            "type": "file"
+        },
+        {
+            "name": "BOOTSECT.BAK",
+            "type": "file"
+        },
+        {
+            "name": "msdia80.dll",
+            "type": "file"
+        },
+        {
+            "name": "pagefile.sys",
+            "type": "file"
+        }
+    ],
+    "path": "C:\\"
+}
+{
+    "file_lists": [
+        {
+            "name": "SIFLA171040503.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA171040504.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA171040505.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA171041100.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCM0700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCM0701.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCM0800.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCN0700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCN0701.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCN0800.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCS0601.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCS0700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCS0701.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1CFCS0800.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1DSAT1100.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1DSAV1100.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1K7000300.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1PLCS0504.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1S7PL1000.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1S7PL1100.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA1WPC20700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA3SPBI0600.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9LB100600.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9LB100601.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9LB100602.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9LB100700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WARC0700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WC180700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WC190700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WC250700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WCL60700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WDC10700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC10700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC20700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC30700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC40700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC50700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC60700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC70700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRC80700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT10700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT20700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT30700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT40700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT50700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT60700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT70700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WRT80700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSEC0700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSN10700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSN20700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSN30700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSN40700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSN50700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSN60700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WSRD0700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WVC00700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WVC10700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WVC20700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WVC30700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WVC40700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WVC50700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLA9WVC60700.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7BASC1005.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7BASC1100.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7PCED0505.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7PRO11100.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7PROF0503.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7PROF0504.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7PROF0505.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7PROF1100.EKB",
+            "type": "file"
+        },
+        {
+            "name": "SIFLS7PROT1100.EKB",
+            "type": "file"
+        }
+    ],
+    "path": "C:\\AX NF ZZ"
+}
+{
+    "file_lists": [
+        {
+            "name": "boot",
+            "type": "dir"
+        },
+        {
+            "name": "bootmgr",
+            "type": "file"
+        }
+    ],
+    "path": "D:\\"
+}
+[
+    {
+        "cmd": 131080,
+        "ncmd": "文件目录",
+        "data": {
+            "path": "E:\\"
+        }
+    }
+]
+{
+    "errorCode": 10003,
+    "errorMsg": "Parameter Error",
+    "status": false
+}
